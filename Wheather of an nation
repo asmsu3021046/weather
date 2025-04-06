@@ -1,27 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-        <h1>Weather App</h1>
-        <div class="search-box">
-            <input type="text" id="city" placeholder="Enter city name">
-            <button onclick="getWeather()">Search</button>
-        </div>
-        <div id="weather-info" class="hidden">
-            <h2 id="city-name"></h2>
-            <p id="temperature"></p>
-            <p id="humidity"></p>
-            <p id="description"></p>
-            <img id="weather-icon" src="" alt="Weather Icon">
-        </div>
-        <p id="error-message" class="error hidden"></p>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+1px solid #ccc;
+    border- 
+radius: 4px;
+}
+
+button { body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f0f8ff;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 200px;
+    border:
+    padding: 8px 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
